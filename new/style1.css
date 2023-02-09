@@ -1,0 +1,274 @@
+/* nav start */
+ #navbarNav{
+    margin-left: 45%;
+ }
+ #button1{
+   margin-top: 4%;
+   background-color: rgba(15, 14, 14, 0.945);
+   border-style: groove;
+   border-color: black;
+   color: antiquewhite;
+ }
+ 
+#bg { background-color: rgb(5, 19, 65);
+
+}
+/* nav end */
+
+/* section 1 start */
+.phara{
+   float: left;
+   margin: auto;
+   margin-right: 10%;
+   margin-bottom: 10%;
+   padding-top: 100px;
+   padding-bottom: 40px;
+   text-align: center;
+   padding-top: 20px;  
+}
+
+.grid-container {
+ display: grid;
+ grid-template-columns: auto auto ;
+ gap: 10px;
+ background-color: rgb(192, 223, 252);  /* 1 st image*/
+ padding: 10px;
+ padding-top: 2%;
+}
+
+.grid-container > div {
+ text-align: center;
+ font-size: 30px;
+}
+
+.phara p{
+ font-size: small;
+}
+.grid-container > div img{
+ margin-top: 5%;
+ margin-left: 2%;
+}
+
+/* section 1 end */
+
+/* section 2 start*/
+
+.grid-container1 {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   background-color:  rgb(237, 241, 244); /*2nd image*/
+   gap: 10px;
+   /* margin-bottom: 100px; */
+   margin-top: 2px;
+   padding: 10px;
+  
+ }
+ 
+ .grid-container1 > div {
+  
+   margin-left:20%;
+   text-align: center;
+   font-size: 20px;
+ }
+ 
+ .grid-container2 {
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 20px;
+   padding: 10px;
+  
+ }
+ 
+ .grid-container2 > div {
+   text-align: justify;
+   font-size: 12px;
+   
+ }
+ .grid-container1 img{
+margin-top: 5%; }
+ /* section 2 end */
+
+ /* section 3 start  */
+ /* #Portfolio{
+  border-style: groove;
+ } */
+
+ .heading1{
+   color: gray;
+   text-align: center;
+ }
+
+ #border h5{
+  padding-top: 2%;
+ }
+ 
+ .line{    /* button line*/
+   width: 7%;
+   height: 5px;
+   margin-left: 47%;
+   align-items: center;
+   border: none;
+   background-color: rgb(2, 50, 95);
+  border-radius: 5px;
+ }
+
+ #row{
+  border: 1px;
+  padding:5px;
+  padding-bottom: 3%;
+  box-shadow: 5px 10px 10px 10px   #9e9a9a;
+ }
+   #row img{    /*image galary */
+   margin-top: 8%;
+   border-radius: 5%;
+  }
+
+  #image{ /* image body*/
+    padding: 5px;
+    background: linear-gradient(135deg ,#1382b5fc);
+   padding-bottom: 3%;
+   
+  }
+   #row img:hover {
+    transform: scale(1.1);
+   }
+   #border{
+    background-color:  rgb(226, 232, 237);
+   }
+ /* section 3 end */
+/* section 4 start */
+
+.heading2{
+  
+   color: gray;
+   text-align: center;
+ }
+ 
+ .line1{    /* button line*/
+   width: 5%;
+   height: 4px;
+   margin-left: 48%;
+  margin-bottom: 2%;
+   align-items: center;
+   border: none;
+   background-color: rgb(2, 50, 95);
+  border-radius: 5px;
+ }
+ #image2{ /* image body*/
+   /* background-color:  rgb(127, 186, 241); */
+   padding-bottom: 3%;
+   padding-top: 3%;
+  }
+/* section 4 end */
+
+/* section 5 start */
+.heading3{
+   margin-top: 2%;
+   color: gray;
+   text-align: center;
+ }
+ 
+ .line2{    /* button line*/
+   width: 5%;
+   height: 4px;
+   margin-left: 48%;
+  margin-bottom: 2%;
+   align-items: center;
+   border: none;
+   background-color: rgb(2, 50, 95);
+  border-radius: 5px;
+ }
+#carosul{
+   background-color:  rgb(181, 181, 181);
+   
+}
+
+
+#sectio5 img{
+  align-items: center;
+}
+
+
+.carousel-inner{
+  size: 300px;
+}
+#carouselExampleDark{
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel .carousel-indicators button {
+  width: 10px;
+ height: 10px;
+ border-radius: 100%;
+
+}
+
+
+/* section 5 end */
+/* section 6 start */
+.grid-container3 {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   background-color: rgb(173, 173, 187);
+   gap: 10px;
+   padding-top: 3px;
+   padding: 10px;
+  
+ }
+ 
+ .grid-container3 > div {
+  padding-left: 5px;
+   text-align: justify;
+   font-size: 15px;
+ }
+.grid-container3 div i{
+  font-size: 26px;
+}
+
+ .grid-container3 ul{
+   list-style: none;
+  }
+
+  .size{
+   font-size: smaller;
+ }  
+/* section 6 end */
+
+/* footer start */
+.footer{
+   height: auto;
+   width: 100%;
+   background-color: rgb(230, 244, 245); 
+   text-align: center;
+   /* opacity: var(-1); */
+ padding-top: 5px;
+ margin-bottom: 2%;
+ /* margin-bottom:80px; */
+ /* margin-top: 10px; */
+ 
+   }
+ 
+  
+   #foot{
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     color: beige;
+     height: 30px;
+     width: 100%;
+     background-color: rgb(28, 31, 32); 
+     padding-bottom: 3%;
+   }
+ #arrow{
+   background-color: rgb(10, 10, 136);
+   color: aliceblue;
+   /* border: none; */
+   /* border-radius: 10%;
+   margin-bottom: 2%; */
+ 
+   }
+/* footer end */
