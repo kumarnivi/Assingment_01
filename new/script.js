@@ -1,4 +1,4 @@
-// button function
+// button function start
 
 function mouseOver() {
     document.getElementById("demo").style.backgroundColor = "red";
@@ -8,7 +8,7 @@ function mouseOut() {
     document.getElementById("demo").style.backgroundColor = "blue";
 }
 
-
+// button function end
 // function normalImg(x) {
 //     x.style.height = "250px";
 //     x.style.width = "250px";
@@ -16,7 +16,7 @@ function mouseOut() {
 //   };
 
 
-
+// img_gallery filter start
 const filterButtons = document.querySelector("#filter-btns").children;
 const items = document.querySelector(".portfolio-gallery").children;
   
@@ -39,3 +39,24 @@ for (let i = 0; i < filterButtons.length; i++) {
         }
       })
     }
+// img_gallery filter end
+
+// js assinmgent carousel start
+// js assinmgent carousel start
+
+
+
+ // map function start
+ let map;
+
+ function initMap() {
+   map = new google.maps.Map(document.getElementById("map"), {
+     center: { lat: -34.397, lng: 150.644 },
+     zoom: 8,
+   });
+ }
+ 
+ window.initMap = initMap;
+ 
+ 
+   // map function end

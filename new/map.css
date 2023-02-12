@@ -1,0 +1,79 @@
+
+#map {
+    height: 70%;
+    border: solid black  ;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* form  */
+  
+   form{
+    flex: 1 1 4rem;
+    /* padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem; */
+    
+  }
+  form .box{
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: rgb(17, 15, 15);
+    text-transform: none;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+  
+  }
+  
+   button.btn{
+    /* padding: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 1rem 0;
+    background: rgba(37, 47, 194, 0.904);
+    color: rgb(243, 242, 242);
+    text-transform: none;
+    font-size: 1.5rem;
+    /* width: 100%; */
+    border: none;
+    float: left;
+  
+  }
+  
+  .grid-containery {
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 5px;
+    padding: 7px;
+  }
+  
+  .grid-containery > div {
+    text-align: center;
+    font-size: 20px;
+  }
+  .grid-containerz {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 5px;
+    padding: 7px;
+  }
+  .grid-containerz > div {
+    text-align: center;
+    font-size: 20px;
+  
+  }
+  
+  .container{
+    text-align: center;
+  }
+  
+  /* api and form Js end */

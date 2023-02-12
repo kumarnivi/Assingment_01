@@ -55,7 +55,7 @@
  margin-left: 2%;
 }
 /* (js assingment) */
-#home{
+#image{
   margin-top: 3%;
 }
 
@@ -103,12 +103,12 @@
  }
  .grid-container1 img{
 margin-top: 5%; }
+
+
  /* section 2 end */
 
  /* section 3 start  */
- /* #Portfolio{
-  border-style: groove;
- } */
+ 
 
 
  body{
@@ -160,7 +160,7 @@ margin-top: 5%; }
 }
 .portfolio{
   background-color: white;
-  padding: 100px 7px;
+  padding: 50px 7px;
 }
 .portfolio .section-title h1:before{
   left: 30%;
@@ -247,14 +247,18 @@ margin-top: 5%; }
   border-radius: 5px;
  }
 
- #row{
+.portfolio{
+  background-color: #e7e2e2;
+}
+
+ .portfolio-gallery{
   border: 1px;
   padding:5px;
   padding-bottom: 3%;
   box-shadow: 5px 10px 10px 10px   #9e9a9a;
  }
-   #row img{    /*image galary */
-   margin-top: 8%;
+   .item img{    /*image galary */
+    margin-top: 6%; 
    border-radius: 5%;
   }
 
@@ -264,7 +268,7 @@ margin-top: 5%; }
    padding-bottom: 3%;
    
   }
-   #row img:hover {
+   .item img:hover {
     transform: scale(1.1);
    }
    #border{
