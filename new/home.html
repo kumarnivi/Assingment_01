@@ -41,6 +41,9 @@
           <li class="nav-item">
             <a class="nav-link " href="#image2" tabindex="-1" aria-disabled="true">Team</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#team" tabindex="-1" aria-disabled="true" onclick="openPoup()">Service</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#carosul" id="navbarDarkDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,8 +81,12 @@
       <div>
         <section>
           <div class="container" id="product">
-            <div class="row" id="carusol">
+
+           
+           <div class="row" id="carusol">
               <div class="col">
+  <div class="carousel slide"></div>
+                 <!--
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -93,12 +100,11 @@
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
                       aria-label="Slide 5"></button>
 
-                  </div>
-                  <div class="carousel-inner">
+                  </div> --> 
+                  <!-- <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                       <img src="./image/newcam1.webp" class="d-block w-100" alt="...">
                       <div class="carousel-caption d-none d-md-block">
-
                       </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
@@ -136,7 +142,7 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-              </div>
+              </div> -->
               </main>
         </section>
         <!-- <img src="./image/cam1.jpg" class="img-fluid rounded-start" alt="..." width="650px" height="550px"> -->
@@ -149,12 +155,10 @@
   <section>
     <div class="grid-container1">
       <div>
+        <!-- zooimg js start -->
         <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="./image/cam2.webp" alt="Smiley"
-          width="250px" height="250px">
-
-        <!-- <div><img id="zoom" src="./image/cam2.webp" class="rounded float-end" alt="..." width="350px" height="200px">
-      <button onclick="zoomIn()"></button>
-      <button onclick="zoomOut()"></button> -->
+          width="200px" height="200px">
+        <!--  zooming JS end -->
       </div>
       <div>
         <div>
@@ -435,7 +439,7 @@
     <footer>
       <div id="foot">
         <p>
-        <pre>&#169; copyright@2022 Allright Resevred                                                                                                      by:Nive <a href="#home"><button type="button" id="arrow">&#8593;</button></a></pre>
+         <pre>&#169; copyright@2022 Allright Resevred                                                                                      by:Nive <a href="#home"> <button type="button" id="arrow">&#8593;</button></div></a></pre> 
         </p>
       </div>
     </footer>

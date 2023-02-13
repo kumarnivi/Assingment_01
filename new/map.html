@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact_page</title>
     <link rel="stylesheet" href="./map.css">
+    <!-- Bootsrap5 css -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.bing.com/ck/a?!&&p=be6a70d3a920052fJmltdHM9MTY2NzAwMTYwMCZpZ3VpZD0zMTdiMDY5NC1lYThiLTZlM2MtMWQ0Ni0xNGQ5ZWIyNzZmZTcmaW5zaWQ9NTUwMg&ptn=3&hsh=3&fclid=317b0694-ea8b-6e3c-1d46-14d9eb276fe7&u=a1L3NlYXJjaD9xPWZvbnQrYXdlc29tZStjZG4rbGluayZGT1JNPUFXUkU&ntb=1">
+    <!-- css fomtawesom link -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- font awesom link -->
 </head>
 <body>
     
@@ -28,25 +33,101 @@
                         </ol>
                         <p style="color: darkblue; margin-bottom: 2%;">Want to know more Droup us A mail??</p>
                         <hr>
-                        <form action="">
+                        <form action="" onsubmit= "return myfunc()" class="login active">
                             <div class="grid-containery">
-                                <div> <input type="text" placeholder=" first name" class="box" id="fname"></div>
-                                <div><input type="text" placeholder="last name" class="box" id="lname"></div>
-                                <div> <input type="email" placeholder="email" class="box" id="email"></div>
-                                <div><input type="text" placeholder="project" class="box"></div>
+                                <div> <input type="text" placeholder=" first name" class="box" id="fname">
+                                    <p id="none"></p></div>
+                                <div><input type="text" placeholder="last name" class="box" id="lname">
+                                    <p id="none1"></p></div>
+                                <div> <input type="email" placeholder="email" class="box" id="email">
+                                    <p id="none2"></p></div>
+                                <div><input type="text" placeholder="project" class="box" id="project">
+                                    <p id="none3"></p></div>
                             </div>
                             <div class="grid-containerz">
-                                <div><textarea name="" id="" cols="10" rows="5" class="box massage"
-                                        placeholder="massage"></textarea></div>
+                                <div><textarea name="" id="textarea" cols="8" rows="4" class="box massage"
+                                        placeholder="massage"></textarea>
+                                         <p id="none4">
+                                    </div>
                             </div>
-                            <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+                            <button type="submit" class="btn">SEND <i class="fas fa-paper-plane"></i></button>
                         </form>
     
+     
+     <!-- <div class="container">
+        <form onsubmit= "return myfunc()" action="#" class="login active" id="form">
+            <h2 class="title">Login</h2>
     
+            <div class="form-group">
+            <label for="Name">Name</label>
+             <div class="input-group">
+                 <input type="text" id="name" placeholder="Name">
+                 <i class='bx bxs-user' ></i>
+                 <p id="none"></p>
+                 </div>
+             </div>
+    
+             <div class="form-group">
+                <label for="Email">Email</label>
+                 <div class="input-group">
+                     <input type="text" id="email" placeholder="Email address">
+                     <i class='bx bx-envelope'></i>
+                     <p id="none1"></p>
+                     </div>
+                 </div>
+    
+                 <div class="form-group">
+                    <label for="Zipcode">Zipcode</label>
+                     <div class="input-group">
+                         <input type="text" id="Zipcode" placeholder="Zipcode">
+                         <i class='bx bx-package' ></i>
+                         <p id="none2"></p>
+                         </div>
+                     </div>
+    
+                     <div class="form-group">
+                        <label for="Phone number">Phone Number</label>
+                         <div class="input-group">
+                             <input type="number" id="Phone number" placeholder="Phone number">
+                             <i class='bx bxs-phone' ></i>
+                             <p id="none3"></p>
+                             </div>
+    
+                         </div>
+                         <button type="submit" class="btn-submit">login</button>
+                         
+        </form>
+    </div> -->
+      
                     </div>
     
                 </div>
             </div>
+        </div>  
+        <p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
+ </div>
+
+
+ <script>
+     //  page loader start
+
+  document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+          "body").style.visibility = "hidden";
+        document.querySelector(
+          "#spinner").style.visibility = "visible";
+    } else {
+        document.querySelector(
+          "#spinner").style.display = "none";
+        document.querySelector(
+          "body").style.visibility = "visible";
+    }
+};
+  // page loader end
+ </script>
+ <script src="./script.js"></script>
+ <script src="./js/bootstrap.bundle.min.js"></script>
         </section>
       <!-- Api and form Js end -->
     
@@ -79,7 +160,7 @@
             <script
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
                 defer></script>
-            <script defer src="<https://maps.googleapis.com/maps/api/js?key=**YOUR_API_KEY**&callback=initMap"></script>
+            <script defer src="<https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap"></script>
             <script src="./js/bootstrap.bundle.min.js"></script>
     
             <script src="./script.js"></script>

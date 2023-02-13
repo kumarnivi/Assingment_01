@@ -1,7 +1,8 @@
 
 #map {
-    height: 70%;
+    height: 90%;
     border: solid black  ;
+    margin-top: 5%;
   }
   
   html,
@@ -22,8 +23,8 @@
     
   }
   form .box{
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 0.5rem;
+    /* margin: 1rem 0; */
     background: #3333;
     color: rgb(17, 15, 15);
     text-transform: none;
@@ -41,7 +42,7 @@
     background: rgba(37, 47, 194, 0.904);
     color: rgb(243, 242, 242);
     text-transform: none;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     /* width: 100%; */
     border: none;
     float: left;
@@ -77,3 +78,31 @@
   }
   
   /* api and form Js end */
+
+  /* page loader start */
+
+#spinner   {  
+           
+            animation: spin 1s linear infinite;
+            color: red;
+        }
+          
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+          
+.inline{
+    display: flex;
+}
+.center{
+    flex:left;
+}
+.spinner i{
+    margin-top: 10px;
+    margin-left: 50px;
+
+    
+}
+  /* page loader end  */

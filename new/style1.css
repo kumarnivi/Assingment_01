@@ -21,6 +21,30 @@
 /* nav end */
 
 /* section 1 start */
+
+.carousel{
+  width: 400px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./image/newcam3.jpg);
+}
+.slide{
+  -webkit-animation: 1.6s fade;
+  animation: 1.6s fade;
+}
+
+@-webkit-keyframes fade{
+  from{opacity: 0.4;}
+  to{opacity: 1}
+  
+}
+@keyframes fade{
+  from{opacity: 0.4}
+  to{opacity: 1}
+}
+
+
 .phara{
    float: left;
    margin: auto;
