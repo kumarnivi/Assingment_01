@@ -1,111 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product page</title>
-    <!-- coustom css link -->
-    <link rel="stylesheet" href="./product.css">
-    <!-- bootstrap5 css link-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- font awesome link -->
-    <script src="https://kit.fontawesome.com/03f892132c.js" crossorigin="anonymous"></script>
-    <!-- home page link -->
-    <link rel="stylesheet" href="./home.html">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product page</title>
+  <!-- coustom css link -->
+  <link rel="stylesheet" href="./product.css">
+  <!-- bootstrap5 css link-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/03f892132c.js" crossorigin="anonymous"></script>
+  <!-- home page link -->
+  <link rel="stylesheet" href="./home.html">
+  <link rel="stylesheet" href="./loader.html">
 </head>
-<body>
-     <!-- nav start -->
- <nav class="navbar navbar-expand-lg navbar-dark  navbar fixed-top" id="bg">
-    <div class="container-fluid" >
-      <a class="navbar-brand mb-0 h1" href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>Photography</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./product.html">product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Team</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              more
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Videos</a></li>
-              <li><a class="dropdown-item" href="#">Albums</a></li>
-              <li><a class="dropdown-item" href="#">frames</a></li>
-            </ul>
-          <li class="nav-item">
-            <div class="btn-group" role="group" aria-label="Third group">
-              <button type="button" class="rounded-pill btn btn-primary btn-sm btn-group btn-group-sm light"
-              role="group" aria-label="" id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" >
-              Get Started</button>
+<!-- page loader start -->
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-center">
+<!-- pageloader  end-->
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-dark  navbar fixed-top" id="bg">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>Photography</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./product.html">product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                more
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Videos</a></li>
+                <li><a class="dropdown-item" href="#">Albums</a></li>
+                <li><a class="dropdown-item" href="#">frames</a></li>
+              </ul>
+            <li class="nav-item">
+              <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="rounded-pill btn btn-primary btn-sm btn-group btn-group-sm light"
+                  role="group" aria-label="" id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                  Get Started</button>
               </div>
-            </div>
-          </li>
+        </div>
+        </li>
         </ul>
       </div>
-    </div>
-  </nav>
- <!-- nav end -->
  
-<!-- section 7 srart -->
-<section>
+  </nav>
+  <!-- nav end -->
+
+  <!-- section 7 srart -->
+  <section>
     <div id="list">
-    <ul style="list-style:none;">
+      <ul style="list-style:none;">
         <li><a href="#">product</a></li>
         <li><a href="#news">News|</a></li>
         <li><a href="#contact">Home|</a></li>
       </ul>
-      </div>
-</section>
-<!-- section 7 end -->
+    </div>
+  </section>
+  <!-- section 7 end -->
 
-<!-- section 8 start -->
-  <section >
+  <!-- section 8 start -->
+  <section>
     <div class="container" id="product">
       <div class="row" id="carusol">
         <div class="col">
           <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
 
             </div>
             <!-- Text animation JS start -->
 
-               <!-- Text animation JS end -->
+            <!-- Text animation JS end -->
             </h1>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./image/albu2webp" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                 
+
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <img src="./image/album/albu3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  
+
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./image/album/albu6.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                 
+
                 </div>
               </div>
               <div class="carousel-item">
@@ -114,17 +129,19 @@
                 </div>
               </div>
               <div class="carousel-item">
-              <img src="./image/cr1.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
+                <img src="./image/cr1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
               </div>
+
             </div>
-  
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -138,88 +155,95 @@
                 <li><b>Ctegory </b> :album desing </li>
                 <li><b>claint</b>:USA company</li>
                 <li> <b>project date</b>:01 maech 2020</li>
-                <li> <b>link</b>:<a href="#">www.Example.com</a></li></p>
-            </div>
-           </div>
-           <p><h5>This is for sample album </h5>
-            Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.
-             Ad <br> recusandae excepturi a modi, <br> beatae omnis eprehenderit vero
-             <br> 
-            </p>
-         </div>            
-      </div>
-  </section>
-<!-- section 8 end -->
-
-<!-- section 6 start -->
-<section>
-    <div class="footer">
-            <div class="grid-container3">
-                <div class="size">
-              <ul>
-                  <li><h5>Photography</h5></li>
-                  
-                  <li>Jaffna,</li>
-                  <li>Eluthumadduwal north,</li>
-                  <li>Maruthankulam</li>
-              <ul>
-                      <li><b>Phone:</b>0771285234</li>
-                      <li><b>Email:</b><a href="#" id="contact">webdesing@gmail.com </a></li>
-                  </ul>
-                    </ul>
-                </div>
-                <div>
-            <ul>
-                <h6>Useful links</h6>
-                <li></li><a href="#home">Home</a></li>
-                <li><a href="#about"> About us</a></li>
-                <li><a href="#service"> Service</a></li>
-                <li><a href="#team">Team service</a></li>
-                <li><a href="#contact">Privacy policy </a> </li>
-            </ul>
-                </div>
-          <div>
-              <ul>
-                  <h6>Our Service</h6>
-                  <li>Photography</li>
-                  <li>Video</li>
-                  <li>Allbums</li>
-                  <li>Frames</li>
-                  <li>3D frame</li>
-              </ul>
-                </div>  
-                <div>
-              <h6>Our Social Network</h6>
-              <p>you can fllow us</p>
-              <div class="grid-container3">
-                  <div><i style="color:rgb(51, 70, 172);" class="fa-brands fa-facebook"></i></div>
-                  <div><i style="color:rgb(14, 160, 170);" class="fa-brands fa-twitter"></i></div>
-                  <div><i class="fa-brands fa-linkedin"></i></div>
-                  <div><i style="color:rgb(5, 105, 27);" class="fa-brands fa-whatsapp"></i></div>
-              </div>
+                <li> <b>link</b>:<a href="#">www.Example.com</a></li>
+                </p>
             </div>
           </div>
-       
-    </div>     
-  </section>
-  
-  <!-- section 6 end -->
-  
-
-<!-- footer start -->
-<section>
-    <footer>
-        <div id="foot">
-  
-  <p><pre>&#169; copyright@2022 Allright Resevred                                                                                                     by:Nive <a href="#"><button type="button" id="arrow">&#8593;</button></a> </pre> </p> 
+          <p>
+          <h5>This is for sample album </h5>
+          Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.
+          Ad <br> recusandae excepturi a modi, <br> beatae omnis eprehenderit vero
+          <br>
+          </p>
         </div>
+      </div>
+  </section>
+  <!-- section 8 end -->
+
+  <!-- section 6 start -->
+  <section>
+    <div class="footer">
+      <div class="grid-container3">
+        <div class="size">
+          <ul>
+            <li>
+              <h5>Photography</h5>
+            </li>
+
+            <li>Jaffna,</li>
+            <li>Eluthumadduwal north,</li>
+            <li>Maruthankulam</li>
+            <ul>
+              <li><b>Phone:</b>0771285234</li>
+              <li><b>Email:</b><a href="#" id="contact">webdesing@gmail.com </a></li>
+            </ul>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h6>Useful links</h6>
+            <li></li><a href="#home">Home</a></li>
+            <li><a href="#about"> About us</a></li>
+            <li><a href="#service"> Service</a></li>
+            <li><a href="#team">Team service</a></li>
+            <li><a href="#contact">Privacy policy </a> </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <h6>Our Service</h6>
+            <li>Photography</li>
+            <li>Video</li>
+            <li>Allbums</li>
+            <li>Frames</li>
+            <li>3D frame</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Our Social Network</h6>
+          <p>you can fllow us</p>
+          <div class="grid-container3">
+            <div><i style="color:rgb(51, 70, 172);" class="fa-brands fa-facebook"></i></div>
+            <div><i style="color:rgb(14, 160, 170);" class="fa-brands fa-twitter"></i></div>
+            <div><i class="fa-brands fa-linkedin"></i></div>
+            <div><i style="color:rgb(5, 105, 27);" class="fa-brands fa-whatsapp"></i></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section 6 end -->
+
+
+  <!-- footer start -->
+  <section>
+    <footer>
+      <div id="foot">
+
+        <p>
+        <pre>&#169; copyright@2022 Allright Resevred                                                                                                     by:Nive <a href="#"><button type="button" id="arrow">&#8593;</button></a> </pre>
+        </p>
+      </div>
     </footer>
   </section>
-  
+  </div>
   <!-- footer end -->
 
-<!-- bootstrap5 js link-->
-<script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./script.js"></script>
+  <!-- bootstrap5 js link-->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
