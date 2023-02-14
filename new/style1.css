@@ -2,6 +2,11 @@
  #navbarNav{
     margin-left: 45%;
  }
+ /* .active, .item:hover {
+  background-color: rgba(54, 50, 50, 0.411);
+  color: white;
+
+} */
  #button1{
    margin-top: 4%;
    background-color: rgba(15, 14, 14, 0.945);
@@ -30,8 +35,8 @@
   background-image: url(./image/newcam3.jpg);
 }
 .slide{
-  -webkit-animation: 1.6s fade;
-  animation: 1.6s fade;
+  -webkit-animation: 1.4s fade;
+  animation: 1.4s fade;
 }
 
 @-webkit-keyframes fade{
@@ -351,7 +356,7 @@ margin-top: 5%; }
   align-items: center;
 }
 
-
+/* 
 .carousel-inner{
   size: 300px;
 }
@@ -368,8 +373,30 @@ margin-top: 5%; }
  height: 10px;
  border-radius: 100%;
 
+} */
+
+
+.page{
+  width: 400px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./image/hello.png);
+}
+.sow{
+  -webkit-animation: 1.4s fade;
+  animation: 1.4s fade;
 }
 
+@-webkit-keyframes fade{
+  from{opacity: 0.4;}
+  to{opacity: 1}
+  
+}
+@keyframes fade{
+  from{opacity: 0.4}
+  to{opacity: 1}
+}
 
 /* section 5 end */
 /* section 6 start */
@@ -434,4 +461,34 @@ margin-top: 5%; }
    margin-bottom: 2%; */
  
    }
+
+
+   /* button hover start*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(25, 11, 155);
+  color: white;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(171, 230, 230);
+}
+
+/* button hover end*/
 /* footer end */

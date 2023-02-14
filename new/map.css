@@ -106,3 +106,30 @@
     
 }
   /* page loader end  */
+
+  /* sucess form style start  */
+  #style{
+    border: 1px;
+    padding: 5%;
+    text-align: center;
+    /* padding-bottom: 3%; */
+    box-shadow: 5px 10px 10px 10px   #9e9a9a;
+    background-color: #e29494;
+    width: 50%;
+    /* margin: 25%; */
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    
+  }
+   /* sucess form style end  */
+
+   /* back button start */
+   #backbutton{
+    background-color: rgba(17, 105, 221, 0.904);
+    padding: 1%;
+    border: none;
+   border-radius: 10%;
+    color: antiquewhite;
+   }
+   /* back button end */
